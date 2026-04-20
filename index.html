@@ -1,4 +1,4 @@
-```html id="v0j3kq"
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -48,8 +48,8 @@ section {
     margin:auto;
 }
 
-/* SERVICES + PRODUCTS */
-.services, .products {
+/* GRID */
+.grid {
     display:flex;
     gap:20px;
     flex-wrap:wrap;
@@ -70,7 +70,6 @@ section {
     background:#e63946;
     color:white;
     padding:10px 20px;
-    margin-top:10px;
     text-decoration:none;
     border-radius:5px;
 }
@@ -123,6 +122,7 @@ footer {
     <a href="#about">Giới thiệu</a>
     <a href="#services">Dịch vụ</a>
     <a href="#products">Sản phẩm</a>
+    <a href="#customers">Khách hàng</a>
     <a href="#contact">Liên hệ</a>
 </nav>
 
@@ -134,31 +134,29 @@ footer {
 
 <section id="about">
     <h2>Giới thiệu</h2>
-    <p>AH Uniform chuyên may đồng phục công ty, áo thun, gia công số lượng lớn với chất lượng cao và giá cạnh tranh.</p>
+    <p>AH Uniform chuyên may đồng phục công ty, áo thun, gia công số lượng lớn với chất lượng cao và giá cạnh tranh tại Đồng Nai.</p>
 </section>
 
 <section id="services">
     <h2>Dịch vụ</h2>
-    <div class="services">
-        <div class="card"><div><h3>May đồng phục</h3><p>Công ty, nhà hàng, trường học</p></div></div>
-        <div class="card"><div><h3>Gia công</h3><p>Đơn hàng lớn, giá tốt</p></div></div>
-        <div class="card"><div><h3>Thiết kế</h3><p>Thiết kế theo yêu cầu</p></div></div>
+    <div class="grid">
+        <div class="card"><div><h3>May đồng phục</h3></div></div>
+        <div class="card"><div><h3>Gia công số lượng lớn</h3></div></div>
+        <div class="card"><div><h3>Thiết kế theo yêu cầu</h3></div></div>
     </div>
 </section>
 
 <section id="products">
     <h2>Sản phẩm</h2>
-    <div class="products">
+    <div class="grid">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a">
             <div><h3>Áo thun đồng phục</h3></div>
         </div>
-
         <div class="card">
             <img src="https://images.unsplash.com/photo-1520975922284-9d6e6f69c4c4">
             <div><h3>Đồng phục công ty</h3></div>
         </div>
-
         <div class="card">
             <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0">
             <div><h3>Đồng phục nhà hàng</h3></div>
@@ -166,23 +164,25 @@ footer {
     </div>
 </section>
 
+<section id="customers">
+    <h2>Khách hàng</h2>
+    <p>Đã phục vụ nhiều doanh nghiệp, nhà hàng, quán cafe tại Đồng Nai và TP.HCM.</p>
+</section>
+
 <section id="contact">
     <h2>Liên hệ</h2>
-
-    <p>📍 Tầng 2, Số nhà 48/1, đường Cách mạng tháng Tám, Khu Phố 12,<br>
-    Phường Trấn Biên, Tỉnh Đồng Nai</p>
+    <p>📍 Tầng 2, Số nhà 48/1, đường Cách mạng tháng Tám,<br>
+    Khu Phố 12, Phường Trấn Biên, Tỉnh Đồng Nai</p>
 
     <p>📞 Hotline: 0939.807.399</p>
 
     <a href="tel:0939807399" class="btn">Gọi ngay</a>
 
     <div class="map">
-        <iframe src="https://maps.google.com/maps?q=Cách mạng tháng Tám Đồng Nai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <iframe src="https://maps.google.com/maps?q=Cách mạng tháng Tám Đồng Nai&output=embed"></iframe>
     </div>
-
 </section>
 
-<!-- FLOAT BUTTON -->
 <div class="float-btn">
     <a href="tel:0939807399">📞</a>
     <a href="https://zalo.me/0939807399">💬</a>
