@@ -1,4 +1,4 @@
-```html
+```html id="v0j3kq"
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -48,7 +48,7 @@ section {
     margin:auto;
 }
 
-/* SERVICES */
+/* SERVICES + PRODUCTS */
 .services, .products {
     display:flex;
     gap:20px;
@@ -73,6 +73,32 @@ section {
     margin-top:10px;
     text-decoration:none;
     border-radius:5px;
+}
+
+/* FLOAT BUTTON */
+.float-btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.float-btn a {
+    background:#25d366;
+    color:white;
+    padding:12px;
+    border-radius:50%;
+    text-align:center;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* MAP */
+.map iframe {
+    width:100%;
+    height:300px;
+    border:0;
 }
 
 /* FOOTER */
@@ -102,8 +128,8 @@ footer {
 
 <div class="hero">
     <h2>Đồng phục chuyên nghiệp - Giá tốt</h2>
-    <p>May theo yêu cầu - Giao hàng toàn quốc</p>
-    <a href="#contact" class="btn">Liên hệ ngay</a>
+    <p>Hotline: 0939.807.399</p>
+    <a href="tel:0939807399" class="btn">Gọi ngay</a>
 </div>
 
 <section id="about">
@@ -125,38 +151,42 @@ footer {
     <div class="products">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a">
-            <div>
-                <h3>Áo thun đồng phục</h3>
-                <p>Giá tốt - nhiều mẫu đẹp</p>
-            </div>
+            <div><h3>Áo thun đồng phục</h3></div>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1520975922284-9d6e6f69c4c4">
-            <div>
-                <h3>Đồng phục công ty</h3>
-                <p>Thiết kế chuyên nghiệp</p>
-            </div>
+            <div><h3>Đồng phục công ty</h3></div>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0">
-            <div>
-                <h3>Đồng phục nhà hàng</h3>
-                <p>Đẹp - sang trọng</p>
-            </div>
+            <div><h3>Đồng phục nhà hàng</h3></div>
         </div>
     </div>
 </section>
 
 <section id="contact">
     <h2>Liên hệ</h2>
-    <p>📍 Địa chỉ: (bạn sửa)</p>
-    <p>📞 Hotline: 0909 xxx xxx</p>
-    <p>📧 Email: (bạn sửa)</p>
 
-    <a href="tel:0909xxxxxx" class="btn">Gọi ngay</a>
+    <p>📍 Tầng 2, Số nhà 48/1, đường Cách mạng tháng Tám, Khu Phố 12,<br>
+    Phường Trấn Biên, Tỉnh Đồng Nai</p>
+
+    <p>📞 Hotline: 0939.807.399</p>
+
+    <a href="tel:0939807399" class="btn">Gọi ngay</a>
+
+    <div class="map">
+        <iframe src="https://maps.google.com/maps?q=Cách mạng tháng Tám Đồng Nai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+
 </section>
+
+<!-- FLOAT BUTTON -->
+<div class="float-btn">
+    <a href="tel:0939807399">📞</a>
+    <a href="https://zalo.me/0939807399">💬</a>
+</div>
 
 <footer>
     <p>© 2026 AH Uniform</p>
