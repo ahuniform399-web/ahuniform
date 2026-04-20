@@ -7,92 +7,88 @@
 <title>AH Uniform</title>
 
 <style>
-body {
-    font-family: Arial;
-    margin: 0;
-}
+body {font-family: Arial; margin:0}
 
 /* HEADER */
 header {
-    background: #111;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
+    background:#0d1b2a;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:10px 20px;
 }
-
-header img {
-    height: 60px;
-    margin-right: 15px;
-}
-
-header h1 {
-    font-size: 22px;
-}
+header img {height:60px;margin-right:15px}
 
 /* MENU */
 nav {
-    background: #e63946;
-    text-align: center;
-    padding: 12px;
+    background:#e63946;
+    text-align:center;
+    padding:12px;
 }
-
 nav a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
+    color:white;
+    margin:0 20px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 /* HERO */
 .hero {
-    background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47') center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    background:url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47') center/cover;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
 }
-
-.hero h2 {
-    font-size: 40px;
-}
+.hero h2 {font-size:42px}
 
 /* SECTION */
 section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
+    padding:50px 20px;
+    max-width:1100px;
+    margin:auto;
 }
 
 /* SERVICES */
-.services {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.services, .products {
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
-
 .card {
-    flex: 1;
-    min-width: 250px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
+    flex:1;
+    min-width:250px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+.card img {width:100%}
+.card div {padding:15px}
+
+/* BUTTON */
+.btn {
+    display:inline-block;
+    background:#e63946;
+    color:white;
+    padding:10px 20px;
+    margin-top:10px;
+    text-decoration:none;
+    border-radius:5px;
 }
 
 /* FOOTER */
 footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
-    <!-- ĐỔI link logo tại đây -->
-    <img src="logo.png" alt="AH Uniform">
+    <img src="logo.png">
     <h1>AH UNIFORM</h1>
 </header>
 
@@ -100,45 +96,66 @@ footer {
     <a href="#">Trang chủ</a>
     <a href="#about">Giới thiệu</a>
     <a href="#services">Dịch vụ</a>
+    <a href="#products">Sản phẩm</a>
     <a href="#contact">Liên hệ</a>
 </nav>
 
 <div class="hero">
-    <h2>Giải pháp may mặc toàn diện</h2>
-    <p>Đồng phục - Gia công - Thiết kế theo yêu cầu</p>
+    <h2>Đồng phục chuyên nghiệp - Giá tốt</h2>
+    <p>May theo yêu cầu - Giao hàng toàn quốc</p>
+    <a href="#contact" class="btn">Liên hệ ngay</a>
 </div>
 
 <section id="about">
     <h2>Giới thiệu</h2>
-    <p>👉 Bạn sửa nội dung này theo công ty của bạn</p>
+    <p>AH Uniform chuyên may đồng phục công ty, áo thun, gia công số lượng lớn với chất lượng cao và giá cạnh tranh.</p>
 </section>
 
 <section id="services">
     <h2>Dịch vụ</h2>
-
     <div class="services">
+        <div class="card"><div><h3>May đồng phục</h3><p>Công ty, nhà hàng, trường học</p></div></div>
+        <div class="card"><div><h3>Gia công</h3><p>Đơn hàng lớn, giá tốt</p></div></div>
+        <div class="card"><div><h3>Thiết kế</h3><p>Thiết kế theo yêu cầu</p></div></div>
+    </div>
+</section>
+
+<section id="products">
+    <h2>Sản phẩm</h2>
+    <div class="products">
         <div class="card">
-            <h3>May đồng phục</h3>
-            <p>Đồng phục công ty, nhà hàng, trường học...</p>
+            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a">
+            <div>
+                <h3>Áo thun đồng phục</h3>
+                <p>Giá tốt - nhiều mẫu đẹp</p>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Gia công</h3>
-            <p>Nhận đơn hàng số lượng lớn</p>
+            <img src="https://images.unsplash.com/photo-1520975922284-9d6e6f69c4c4">
+            <div>
+                <h3>Đồng phục công ty</h3>
+                <p>Thiết kế chuyên nghiệp</p>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Thiết kế</h3>
-            <p>Thiết kế theo yêu cầu riêng</p>
+            <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0">
+            <div>
+                <h3>Đồng phục nhà hàng</h3>
+                <p>Đẹp - sang trọng</p>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="contact">
     <h2>Liên hệ</h2>
-    <p>📍 Địa chỉ: sửa tại đây</p>
-    <p>📞 Hotline: sửa tại đây</p>
-    <p>📧 Email: sửa tại đây</p>
+    <p>📍 Địa chỉ: (bạn sửa)</p>
+    <p>📞 Hotline: 0909 xxx xxx</p>
+    <p>📧 Email: (bạn sửa)</p>
+
+    <a href="tel:0909xxxxxx" class="btn">Gọi ngay</a>
 </section>
 
 <footer>
