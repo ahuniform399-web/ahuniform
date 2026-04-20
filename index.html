@@ -34,7 +34,8 @@ nav a {
 
 /* HERO */
 .hero {
-    background:url('https://picsum.photos/1200/500') center/cover;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://picsum.photos/1200/600');
     color:white;
     text-align:center;
     padding:120px 20px;
@@ -43,7 +44,7 @@ nav a {
 
 /* SECTION */
 section {
-    padding:50px 20px;
+    padding:60px 20px;
     max-width:1100px;
     margin:auto;
 }
@@ -57,24 +58,26 @@ section {
 .card {
     flex:1;
     min-width:250px;
-    border:1px solid #ddd;
     border-radius:10px;
     overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 .card img {
     width:100%;
     height:220px;
-    object-fit:cover
+    object-fit:cover;
 }
+.card div {padding:15px}
 
 /* BUTTON */
 .btn {
     display:inline-block;
     background:#e63946;
     color:white;
-    padding:10px 20px;
+    padding:12px 25px;
     text-decoration:none;
     border-radius:5px;
+    margin-top:10px;
 }
 
 /* FLOAT */
@@ -89,10 +92,9 @@ section {
 .float-btn a {
     background:#25d366;
     color:white;
-    padding:12px;
+    padding:14px;
     border-radius:50%;
     text-align:center;
-    text-decoration:none;
 }
 
 /* FOOTER */
@@ -116,31 +118,31 @@ footer {
     <a href="#">Trang chủ</a>
     <a href="#services">Dịch vụ</a>
     <a href="#products">Sản phẩm</a>
+    <a href="#why">Ưu điểm</a>
     <a href="#contact">Liên hệ</a>
 </nav>
 
 <div class="hero">
-    <h2>Đồng phục chuyên nghiệp - Giá tốt</h2>
-    <p>Hotline: 0939.807.399</p>
+    <h2>May Đồng Phục Chuyên Nghiệp</h2>
+    <p>Giá tốt - Thiết kế miễn phí - Giao hàng toàn quốc</p>
+    <p>📞 0939.807.399</p>
     <a href="tel:0939807399" class="btn">Gọi ngay</a>
 </div>
 
 <section id="services">
-    <h2>Dịch vụ</h2>
+    <h2>Dịch vụ của chúng tôi</h2>
     <div class="grid">
         <div class="card">
             <img src="https://picsum.photos/300/200?1">
-            <div style="padding:15px"><h3>May đồng phục</h3></div>
+            <div><h3>May đồng phục công ty</h3></div>
         </div>
-
         <div class="card">
             <img src="https://picsum.photos/300/200?2">
-            <div style="padding:15px"><h3>Gia công số lượng lớn</h3></div>
+            <div><h3>Áo thun - áo polo</h3></div>
         </div>
-
         <div class="card">
             <img src="https://picsum.photos/300/200?3">
-            <div style="padding:15px"><h3>Thiết kế theo yêu cầu</h3></div>
+            <div><h3>Gia công số lượng lớn</h3></div>
         </div>
     </div>
 </section>
@@ -150,28 +152,26 @@ footer {
     <div class="grid">
         <div class="card">
             <img src="https://picsum.photos/300/200?4">
-            <div style="padding:15px"><h3>Áo thun đồng phục</h3></div>
+            <div><h3>Đồng phục nhà hàng</h3></div>
         </div>
-
         <div class="card">
             <img src="https://picsum.photos/300/200?5">
-            <div style="padding:15px"><h3>Áo polo công ty</h3></div>
+            <div><h3>Áo polo doanh nghiệp</h3></div>
         </div>
-
         <div class="card">
             <img src="https://picsum.photos/300/200?6">
-            <div style="padding:15px"><h3>Đồng phục nhà hàng</h3></div>
+            <div><h3>Áo khoác đồng phục</h3></div>
         </div>
     </div>
 </section>
 
-<section>
+<section id="why">
     <h2>Tại sao chọn AH Uniform?</h2>
     <div class="grid">
-        <div class="card"><div style="padding:15px">✔ Giá cạnh tranh</div></div>
-        <div class="card"><div style="padding:15px">✔ May nhanh</div></div>
-        <div class="card"><div style="padding:15px">✔ Thiết kế miễn phí</div></div>
-        <div class="card"><div style="padding:15px">✔ Giao hàng toàn quốc</div></div>
+        <div class="card"><div>✔ Giá tận xưởng</div></div>
+        <div class="card"><div>✔ Thiết kế miễn phí</div></div>
+        <div class="card"><div>✔ Giao hàng nhanh</div></div>
+        <div class="card"><div>✔ Hỗ trợ 24/7</div></div>
     </div>
 </section>
 
