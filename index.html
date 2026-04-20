@@ -61,7 +61,7 @@ section {
     border-radius:10px;
     overflow:hidden;
 }
-.card img {width:100%}
+.card img {width:100%; height:220px; object-fit:cover}
 .card div {padding:15px}
 
 /* BUTTON */
@@ -119,10 +119,8 @@ footer {
 
 <nav>
     <a href="#">Trang chủ</a>
-    <a href="#about">Giới thiệu</a>
     <a href="#services">Dịch vụ</a>
     <a href="#products">Sản phẩm</a>
-    <a href="#customers">Khách hàng</a>
     <a href="#contact">Liên hệ</a>
 </nav>
 
@@ -132,49 +130,52 @@ footer {
     <a href="tel:0939807399" class="btn">Gọi ngay</a>
 </div>
 
-<section id="about">
-    <h2>Giới thiệu</h2>
-    <p>AH Uniform chuyên may đồng phục công ty, áo thun, gia công số lượng lớn với chất lượng cao và giá cạnh tranh tại Đồng Nai.</p>
-</section>
-
 <section id="services">
     <h2>Dịch vụ</h2>
     <div class="grid">
-        <div class="card"><div><h3>May đồng phục</h3></div></div>
-        <div class="card"><div><h3>Gia công số lượng lớn</h3></div></div>
-        <div class="card"><div><h3>Thiết kế theo yêu cầu</h3></div></div>
-    </div>
-</section>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600180758890-6f3f2f1d3c47">
+            <div><h3>May đồng phục công ty</h3></div>
+        </div>
 
-<section id="products">
-    <h2>Sản phẩm</h2>
-    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1520975922284-9d6e6f69c4c4">
+            <div><h3>Gia công số lượng lớn</h3></div>
+        </div>
+
         <div class="card">
             <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a">
             <div><h3>Áo thun đồng phục</h3></div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1520975922284-9d6e6f69c4c4">
-            <div><h3>Đồng phục công ty</h3></div>
-        </div>
+    </div>
+</section>
+
+<section id="products">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="grid">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0">
             <div><h3>Đồng phục nhà hàng</h3></div>
         </div>
-    </div>
-</section>
 
-<section id="customers">
-    <h2>Khách hàng</h2>
-    <p>Đã phục vụ nhiều doanh nghiệp, nhà hàng, quán cafe tại Đồng Nai và TP.HCM.</p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+            <div><h3>Áo polo doanh nghiệp</h3></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+            <div><h3>Áo khoác đồng phục</h3></div>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
     <h2>Liên hệ</h2>
     <p>📍 Tầng 2, Số nhà 48/1, đường Cách mạng tháng Tám,<br>
-    Khu Phố 12, Phường Trấn Biên, Tỉnh Đồng Nai</p>
+    Phường Trấn Biên, Tỉnh Đồng Nai</p>
 
-    <p>📞 Hotline: 0939.807.399</p>
+    <p>📞 0939.807.399</p>
 
     <a href="tel:0939807399" class="btn">Gọi ngay</a>
 
